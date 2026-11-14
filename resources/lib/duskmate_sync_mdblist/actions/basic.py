@@ -1,4 +1,4 @@
-from tmdbhelper_sync_mdblist.actions.item import ItemSync
+from duskmate_sync_mdblist.actions.item import ItemSync
 from tmdbhelper.lib.script.sync.actions import (
     ItemWatched as BasicItemWatched,
     ItemUnwatched as BasicItemUnwatched,
@@ -12,7 +12,7 @@ class ItemWatched(ItemSync, BasicItemWatched):
     sync_url = 'sync/watched'
 
     def get_sync_invalidator(self):
-        from tmdbhelper_sync_mdblist.sync.action_invalidator import MDbListWatchedActionInvalidator
+        from duskmate_sync_mdblist.sync.action_invalidator import MDbListWatchedActionInvalidator
         return MDbListWatchedActionInvalidator(
             self.syncdata, self.sync_provider, self.get_sync_dependencies(), self.remove)
 

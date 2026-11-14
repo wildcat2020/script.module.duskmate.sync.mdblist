@@ -1,6 +1,6 @@
 # XBMC Media Center language file
 # Addon Name: TMDbHelper Sync - MDbList
-# Addon id: script.module.tmdbhelper.sync.mdblist
+# Addon id: script.module.duskmate.sync.mdblist
 # Addon Provider: jurialmunkey
 msgid ""
 msgstr ""
@@ -17,37 +17,37 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.5\n"
 
-#: /resources/lib/tmdbhelper_sync_mdblist/directories/lists_sorting.py
+#: /resources/lib/duskmate_sync_mdblist/directories/lists_sorting.py
 msgctxt "#32067"
 msgid "Budget"
 msgstr "Budget"
 
-#: /resources/lib/tmdbhelper_sync_mdblist/directories/lists_sorting.py
+#: /resources/lib/duskmate_sync_mdblist/directories/lists_sorting.py
 msgctxt "#32068"
 msgid "Revenue"
 msgstr "Einnahmen"
 
-#: /resources/lib/tmdbhelper_sync_mdblist/directories/lists_sorting.py
+#: /resources/lib/duskmate_sync_mdblist/directories/lists_sorting.py
 msgctxt "#32069"
 msgid "Last Air Date"
 msgstr "Letztes Sendedatum"
 
-#: /resources/lib/tmdbhelper_sync_mdblist/directories/lists_sorting.py
+#: /resources/lib/duskmate_sync_mdblist/directories/lists_sorting.py
 msgctxt "#32072"
 msgid "Score"
 msgstr "Punktezahl"
 
-#: /resources/lib/tmdbhelper_sync_mdblist/directories/lists_sorting.py
+#: /resources/lib/duskmate_sync_mdblist/directories/lists_sorting.py
 msgctxt "#32079"
 msgid "User"
 msgstr "Nutzer"
 
-#: /resources/lib/tmdbhelper_sync_mdblist/actions/userlist.py
+#: /resources/lib/duskmate_sync_mdblist/actions/userlist.py
 msgctxt "#32133"
 msgid "Select List(s)"
 msgstr "Liste(n) auswählen"
 
-#: /resources/lib/tmdbhelper_sync_mdblist/directories/basedir.py
+#: /resources/lib/duskmate_sync_mdblist/directories/basedir.py
 msgctxt "#32421"
 msgid "Top Lists"
 msgstr "Top-Listen"
@@ -62,17 +62,17 @@ msgctxt "#32001"
 msgid "MDbList API key"
 msgstr "API-Schlüssel für MDbList"
 
-#: /resources/lib/tmdbhelper_sync_mdblist/actions/like.py /resources/lib/tmdbhelper_sync_mdblist/actions/userlist.py
+#: /resources/lib/duskmate_sync_mdblist/actions/like.py /resources/lib/duskmate_sync_mdblist/actions/userlist.py
 msgctxt "#32516"
 msgid "MDbList API credentials not found."
 msgstr "MDbList API-Anmeldeinformationen nicht gefunden."
 
-#: /resources/lib/tmdbhelper_sync_mdblist/actions/like.py /resources/lib/tmdbhelper_sync_mdblist/actions/userlist.py
+#: /resources/lib/duskmate_sync_mdblist/actions/like.py /resources/lib/duskmate_sync_mdblist/actions/userlist.py
 msgctxt "#32517"
 msgid "Add your personal MDbList API key in TMDbHelper settings."
 msgstr "Persönlichen MDbList API-Schlüssel in den TMDbHelper-Einstellungen hinzufügen."
 
-#: /resources/lib/tmdbhelper_sync_mdblist/actions/userlist.py
+#: /resources/lib/duskmate_sync_mdblist/actions/userlist.py
 msgctxt "#32518"
 msgid "No static lists found for current MDbList user."
 msgstr "Keine statischen Listen für den aktuellen MDbList-Benutzer gefunden."

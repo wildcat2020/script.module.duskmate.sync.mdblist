@@ -1,16 +1,16 @@
-from tmdbhelper_sync_mdblist.api import MDbListContainerAPIs
+from duskmate_sync_mdblist.api import MDbListContainerAPIs
 from tmdbhelper.lib.items.directories.tmdb.lists_standard import ListStandard
-from tmdbhelper_sync_mdblist.directories.lists_local import ListMDbListLocalNoCacheProperties
+from duskmate_sync_mdblist.directories.lists_local import ListMDbListLocalNoCacheProperties
 from tmdbhelper.lib.items.directories.lists_local import UncachedListLocalData
-from tmdbhelper_sync_mdblist.directories.lists_custom import UncachedMDbListCustomData
-from tmdbhelper_sync_mdblist.directories.mapper_lists import (
+from duskmate_sync_mdblist.directories.lists_custom import UncachedMDbListCustomData
+from duskmate_sync_mdblist.directories.mapper_lists import (
     ListsMDbListItemMapper,
     LikedListsMDbListItemMapper,
     OfficialListsMDbListItemMapper,
 )
 from jurialmunkey.ftools import cached_property
 from tmdbhelper.lib.addon.plugin import convert_type
-from tmdbhelper_sync_mdblist.localization import get_localized
+from duskmate_sync_mdblist.localization import get_localized
 
 
 class ListMDbListListsProperties(ListMDbListLocalNoCacheProperties):

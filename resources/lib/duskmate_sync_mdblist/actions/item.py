@@ -1,4 +1,4 @@
-from tmdbhelper_sync_mdblist.actions.service import ItemAction
+from duskmate_sync_mdblist.actions.service import ItemAction
 from tmdbhelper.lib.script.sync.provider import ItemSync as ProviderItemSync
 
 

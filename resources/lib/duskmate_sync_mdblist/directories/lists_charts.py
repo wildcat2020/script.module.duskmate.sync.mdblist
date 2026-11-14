@@ -1,12 +1,12 @@
-from tmdbhelper_sync_mdblist.api import MDbListContainerAPIs
+from duskmate_sync_mdblist.api import MDbListContainerAPIs
 from tmdbhelper.lib.items.directories.lists_default import ListProperties, ListDefault
 from tmdbhelper.lib.items.directories.tmdb.lists_standard import ListStandard
-from tmdbhelper_sync_mdblist.directories.lists_local import ListMDbListLocalProperties
+from duskmate_sync_mdblist.directories.lists_local import ListMDbListLocalProperties
 from tmdbhelper.lib.items.directories.lists_local import UncachedListLocalData
 from tmdbhelper.lib.items.directories.mapper_standard import FactoryItemMapper
-from tmdbhelper_sync_mdblist.directories.mapper_charts import StreamingChartsItemMapper
+from duskmate_sync_mdblist.directories.mapper_charts import StreamingChartsItemMapper
 from tmdbhelper.lib.addon.plugin import convert_type
-from tmdbhelper_sync_mdblist.localization import get_localized
+from duskmate_sync_mdblist.localization import get_localized
 from jurialmunkey.parser import try_int
 from jurialmunkey.ftools import cached_property
 

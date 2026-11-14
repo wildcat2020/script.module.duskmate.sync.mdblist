@@ -1,4 +1,4 @@
-from tmdbhelper_sync_mdblist.directories.artwork import get_icon
+from duskmate_sync_mdblist.directories.artwork import get_icon
 from tmdbhelper.lib.items.directories.mapper_basic import ItemMapper
 from tmdbhelper.lib.addon.plugin import get_localized
 from jurialmunkey.ftools import cached_property

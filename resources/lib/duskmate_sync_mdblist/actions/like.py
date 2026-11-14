@@ -1,5 +1,5 @@
 from jurialmunkey.ftools import cached_property
-from tmdbhelper_sync_mdblist.localization import get_localized
+from duskmate_sync_mdblist.localization import get_localized
 from tmdbhelper.lib.script.method.kodi_utils import container_refresh
 from xbmcgui import Dialog
 

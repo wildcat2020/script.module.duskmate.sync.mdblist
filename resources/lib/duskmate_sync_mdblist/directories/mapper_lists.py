@@ -1,4 +1,4 @@
-from tmdbhelper_sync_mdblist.directories.artwork import get_icon
+from duskmate_sync_mdblist.directories.artwork import get_icon
 from tmdbhelper.lib.items.directories.mapper_standard import MediaItemMapper
 from jurialmunkey.ftools import cached_property
 from tmdbhelper.lib.addon.plugin import get_localized
@@ -51,7 +51,7 @@ class ListsMDbListItemMapper(MediaItemMapper):
         return [
             (
                 get_localized(32319 if self.delete_like else 32315),
-                f'RunScript(script.module.tmdbhelper.sync.mdblist,{command})'
+                f'RunScript(script.module.duskmate.sync.mdblist,{command})'
             ),
         ]
 

@@ -1,9 +1,9 @@
 from jurialmunkey.ftools import cached_property
 from tmdbhelper.lib.items.directories.base.basedir_item import BaseDirItem
 from tmdbhelper.lib.items.directories.base.item_builder import BaseDirItemBuilder
-from tmdbhelper_sync_mdblist.directories.artwork import ADDONPATH, get_icon
-from tmdbhelper_sync_mdblist.settings import MDbListSettings
-from tmdbhelper_sync_mdblist.localization import get_localized
+from duskmate_sync_mdblist.directories.artwork import ADDONPATH, get_icon
+from duskmate_sync_mdblist.settings import MDbListSettings
+from duskmate_sync_mdblist.localization import get_localized
 
 
 class MDbListDirItemBuilder(BaseDirItemBuilder):

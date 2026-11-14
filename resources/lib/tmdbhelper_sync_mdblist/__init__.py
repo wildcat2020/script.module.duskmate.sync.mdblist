@@ -1,1 +1,0 @@
-from tmdbhelper_sync_mdblist.provider import Provider

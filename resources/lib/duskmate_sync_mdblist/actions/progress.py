@@ -1,5 +1,5 @@
 from jurialmunkey.parser import try_int
-from tmdbhelper_sync_mdblist.actions.item import ItemSync
+from duskmate_sync_mdblist.actions.item import ItemSync
 from tmdbhelper.lib.script.sync.progress import ItemProgress as BasicItemProgress
 
 

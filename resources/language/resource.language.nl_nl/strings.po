@@ -1,6 +1,6 @@
 # XBMC Media Center language file
 # Addon Name: TMDbHelper Sync - MDbList
-# Addon id: script.module.tmdbhelper.sync.mdblist
+# Addon id: script.module.duskmate.sync.mdblist
 # Addon Provider: jurialmunkey
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: /resources/lib/tmdbhelper_sync_mdblist/actions/userlist.py
+#: /resources/lib/duskmate_sync_mdblist/actions/userlist.py
 msgctxt "#32133"
 msgid "Select List(s)"
 msgstr "Selecteer lijst(en)"

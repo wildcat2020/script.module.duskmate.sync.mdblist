@@ -5,14 +5,14 @@ from jurialmunkey.parser import boolean
 def run(like_list=None, delete=False):
     if like_list is None:
         executebuiltin(
-            'RunScript(plugin.video.themoviedb.helper,configure_sync_provider,'
-            'addon_id=script.module.tmdbhelper.sync.mdblist)')
+            'RunScript(plugin.video.duskmate,configure_sync_provider,'
+            'addon_id=script.module.duskmate.sync.mdblist)')
         return
     from tmdbhelper_lib.sync.providers.interface import SyncProviderRegistry
     provider = SyncProviderRegistry().find_provider('mdblist')
     if provider is None:
         return
-    from tmdbhelper_sync_mdblist.actions.like import ItemLikeList
+    from duskmate_sync_mdblist.actions.like import ItemLikeList
     ItemLikeList(provider, like_list, delete=boolean(delete)).sync()
 
 

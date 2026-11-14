@@ -1,5 +1,5 @@
 from tmdbhelper.lib.items.directories.tmdb.lists_standard import ListStandard, ListStandardProperties
-from tmdbhelper_sync_mdblist.directories.mapper_standard import FactoryMDbListItemMapper
+from duskmate_sync_mdblist.directories.mapper_standard import FactoryMDbListItemMapper
 from tmdbhelper.lib.items.directories.lists_local import UncachedListLocalData, UncachedListLocalItemsPage
 from tmdbhelper.lib.addon.plugin import get_setting
 from jurialmunkey.ftools import cached_property

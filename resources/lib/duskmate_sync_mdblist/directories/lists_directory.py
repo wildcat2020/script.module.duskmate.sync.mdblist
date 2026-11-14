@@ -1,8 +1,8 @@
 from jurialmunkey.ftools import cached_property
 from tmdbhelper.lib.items.directories.base.lists_base import BaseDirList
 from tmdbhelper.lib.items.directories.lists_default import ListDefault, ListProperties
-from tmdbhelper_sync_mdblist.directories.basedir import get_all_mdblist_class_instances
-from tmdbhelper_sync_mdblist.directories.mapper_directory import MDbListDirectoryItemMapper
+from duskmate_sync_mdblist.directories.basedir import get_all_mdblist_class_instances
+from duskmate_sync_mdblist.directories.mapper_directory import MDbListDirectoryItemMapper
 
 
 class MDbListBaseDirList(BaseDirList):

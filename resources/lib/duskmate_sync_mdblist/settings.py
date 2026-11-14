@@ -2,7 +2,7 @@ from xbmcaddon import Addon
 
 
 class MDbListSettings:
-    addon_id = 'script.module.tmdbhelper.sync.mdblist'
+    addon_id = 'script.module.duskmate.sync.mdblist'
 
     def __init__(self):
         self.addon = Addon(self.addon_id)
@@ -12,7 +12,7 @@ class MDbListSettings:
         return self.addon.getSetting('apikey')
 
     def migrate_settings(self):
-        legacy_addon = Addon('plugin.video.themoviedb.helper')
+        legacy_addon = Addon('plugin.video.duskmate')
         legacy_key = legacy_addon.getSetting('mdblist_apikey')
         if not legacy_key:
             return

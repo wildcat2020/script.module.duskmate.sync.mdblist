@@ -2,8 +2,8 @@ from jurialmunkey.ftools import cached_property
 from tmdbhelper.lib.addon.plugin import get_localized
 from tmdbhelper.lib.items.directories.mapper_basic import ItemMapper
 from tmdbhelper.lib.sync.providers.monitor_lists import MonitorListsSupplier
-from tmdbhelper_sync_mdblist.consts import MDBLIST_MAX_ITEMS_PER_PAGE
-from tmdbhelper_sync_mdblist.sync.pagination import MDbListSyncPage
+from duskmate_sync_mdblist.consts import MDBLIST_MAX_ITEMS_PER_PAGE
+from duskmate_sync_mdblist.sync.pagination import MDbListSyncPage
 from xbmc import Monitor
 
 

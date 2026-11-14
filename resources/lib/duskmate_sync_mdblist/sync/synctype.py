@@ -1,9 +1,9 @@
-from tmdbhelper_sync_mdblist.sync.datatype import (
+from duskmate_sync_mdblist.sync.datatype import (
     MDbListDataType,
     MDbListDataTypeEpisodesInShows,
     MDbListDataTypeOffset,
 )
-from tmdbhelper_sync_mdblist.sync.watched import SyncWatchedFactory
+from duskmate_sync_mdblist.sync.watched import SyncWatchedFactory
 from tmdbhelper.lib.addon.consts import HALFDAY_EXPIRY
 from tmdbhelper.lib.sync.datatype import timerlock
 
@@ -71,7 +71,7 @@ class SyncAllNextEpisodes(MDbListDataTypeEpisodesInShows):
     def sync_func(self):
         """Get next episodes for MDbList."""
         from tmdbhelper.lib.addon.logger import TimerFunc
-        from tmdbhelper_sync_mdblist.sync.nextmeta import MDbListSyncAllNextEpisodesMeta
+        from duskmate_sync_mdblist.sync.nextmeta import MDbListSyncAllNextEpisodesMeta
         with TimerFunc(
             f'Sync: {self.__class__.__name__} get_meta {self.method} {self.item_type}',
             inline=True,

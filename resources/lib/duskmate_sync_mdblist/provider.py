@@ -1,15 +1,15 @@
 from jurialmunkey.ftools import cached_property
 from tmdbhelper.lib.sync.providers.base import SyncProvider
-from tmdbhelper_sync_mdblist.sync import synctype, datasync
-from tmdbhelper_sync_mdblist.actions import basic
-from tmdbhelper_sync_mdblist.actions.progress import ItemProgress
-from tmdbhelper_sync_mdblist.actions.userlist import ItemUserList
-from tmdbhelper_sync_mdblist.settings import MDbListSettings
-from tmdbhelper_sync_mdblist.scrobbler import ProviderScrobbler
-from tmdbhelper_sync_mdblist.monitor_lists import MDbListMonitorLists
-from tmdbhelper_sync_mdblist.directories.item import MDbListDirectoryItem
-from tmdbhelper_sync_mdblist.directories.routes import LIST_ROUTES
-from tmdbhelper_sync_mdblist.ratings import (
+from duskmate_sync_mdblist.sync import synctype, datasync
+from duskmate_sync_mdblist.actions import basic
+from duskmate_sync_mdblist.actions.progress import ItemProgress
+from duskmate_sync_mdblist.actions.userlist import ItemUserList
+from duskmate_sync_mdblist.settings import MDbListSettings
+from duskmate_sync_mdblist.scrobbler import ProviderScrobbler
+from duskmate_sync_mdblist.monitor_lists import MDbListMonitorLists
+from duskmate_sync_mdblist.directories.item import MDbListDirectoryItem
+from duskmate_sync_mdblist.directories.routes import LIST_ROUTES
+from duskmate_sync_mdblist.ratings import (
     MDbListRatingsSupplier,
     MDbListSeasonRatingsSupplier,
     MDbListEpisodeRatingsSupplier,
@@ -60,7 +60,7 @@ class Provider(SyncProvider):
         return self.get_api()
 
     def get_api(self):
-        from tmdbhelper_sync_mdblist.api import MDbListAPI
+        from duskmate_sync_mdblist.api import MDbListAPI
         return MDbListAPI()
 
     def migrate_settings(self):

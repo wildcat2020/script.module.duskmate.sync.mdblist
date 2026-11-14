@@ -4,11 +4,11 @@ This optional module owns MDbList API access, credentials, sync, scrobbling,
 list directories, actions, ratings, monitored lists, and artwork for TMDbHelper.
 It implements provider interface version 4. Shared orchestration and provider
 contracts are documented in the
-[core provider guide](https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/nexus/resources/tmdbhelper/lib/sync/providers/README.md).
+[core provider guide](https://github.com/jurialmunkey/plugin.video.duskmate/blob/nexus/resources/tmdbhelper/lib/sync/providers/README.md).
 
 ## Setup and credentials
 
-Install and enable `script.module.tmdbhelper.sync.mdblist`. Open its settings
+Install and enable `script.module.duskmate.sync.mdblist`. Open its settings
 from TMDbHelper's MDbList API settings button and enter your personal API key.
 The module stores it as `apikey`. Opening settings does not select MDbList as
 a history, watchlist, collection, or scrobbling provider; configure those
@@ -29,15 +29,15 @@ TMDbHelper remains the plugin URL entry point:
 
 | List | URL |
 | --- | --- |
-| MDbList root | `plugin://plugin.video.themoviedb.helper/?info=mdblist_directory` |
-| Top Lists | `plugin://plugin.video.themoviedb.helper/?info=mdblist_toplists` |
-| Your Lists | `plugin://plugin.video.themoviedb.helper/?info=mdblist_yourlists` |
-| Liked Lists | `plugin://plugin.video.themoviedb.helper/?info=mdblist_likedlists` |
-| Curated Lists | `plugin://plugin.video.themoviedb.helper/?info=mdblist_curatedlists` |
-| Official Lists | `plugin://plugin.video.themoviedb.helper/?info=mdblist_officiallists&tmdb_type=movie` |
-| Streaming Charts | `plugin://plugin.video.themoviedb.helper/?info=mdblist_streamingcharts&tmdb_type=movie` |
-| Search Lists | `plugin://plugin.video.themoviedb.helper/?info=mdblist_searchlists&query=QUERY` |
-| List Items | `plugin://plugin.video.themoviedb.helper/?info=mdblist_userlist&list_id=LISTID` |
+| MDbList root | `plugin://plugin.video.duskmate/?info=mdblist_directory` |
+| Top Lists | `plugin://plugin.video.duskmate/?info=mdblist_toplists` |
+| Your Lists | `plugin://plugin.video.duskmate/?info=mdblist_yourlists` |
+| Liked Lists | `plugin://plugin.video.duskmate/?info=mdblist_likedlists` |
+| Curated Lists | `plugin://plugin.video.duskmate/?info=mdblist_curatedlists` |
+| Official Lists | `plugin://plugin.video.duskmate/?info=mdblist_officiallists&tmdb_type=movie` |
+| Streaming Charts | `plugin://plugin.video.duskmate/?info=mdblist_streamingcharts&tmdb_type=movie` |
+| Search Lists | `plugin://plugin.video.duskmate/?info=mdblist_searchlists&query=QUERY` |
+| List Items | `plugin://plugin.video.duskmate/?info=mdblist_userlist&list_id=LISTID` |
 
 Official lists and streaming charts also accept `tmdb_type=tv`.
 The module owns the API client and rating-response mappings. Skin Shortcuts
@@ -55,13 +55,13 @@ movies, shows, seasons, and episodes. It is shipped with this module.
 Use a double ampersand (`&&`, or `&amp;&amp;` in XML) before the file location:
 
 ```text
-plugin://plugin.video.themoviedb.helper/?info=mdblist_locallist&&location/of/the/json/file.json
+plugin://plugin.video.duskmate/?info=mdblist_locallist&&location/of/the/json/file.json
 ```
 
 To load the installed example:
 
 ```text
-plugin://plugin.video.themoviedb.helper/?info=mdblist_locallist&&special://home/addons/script.module.tmdbhelper.sync.mdblist/resources/jsondata/example_mdblist_locallist.json
+plugin://plugin.video.duskmate/?info=mdblist_locallist&&special://home/addons/script.module.duskmate.sync.mdblist/resources/jsondata/example_mdblist_locallist.json
 ```
 
 ## List actions
@@ -73,8 +73,8 @@ sync providers.
 List like/unlike actions use the module's existing Kodi script entry point:
 
 ```text
-RunScript(script.module.tmdbhelper.sync.mdblist,like_list=LISTID)
-RunScript(script.module.tmdbhelper.sync.mdblist,like_list=LISTID,delete=true)
+RunScript(script.module.duskmate.sync.mdblist,like_list=LISTID)
+RunScript(script.module.duskmate.sync.mdblist,like_list=LISTID,delete=true)
 ```
 
 The mapper builds these commands. `actions/like.py` owns the request, result

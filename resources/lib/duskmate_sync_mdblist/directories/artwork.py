@@ -2,7 +2,7 @@ from xbmcaddon import Addon
 from xbmcvfs import translatePath
 
 
-ADDONPATH = translatePath(Addon('script.module.tmdbhelper.sync.mdblist').getAddonInfo('path'))
+ADDONPATH = translatePath(Addon('script.module.duskmate.sync.mdblist').getAddonInfo('path'))
 
 DIRECTORY_ICON_VARIANTS = {
     'curatedlists': ('both',),

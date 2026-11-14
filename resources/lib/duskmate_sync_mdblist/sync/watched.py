@@ -1,7 +1,7 @@
 from jurialmunkey.ftools import cached_property
-from tmdbhelper_sync_mdblist.sync.dataconf import configure_episode_list, configure_episode_snapshot
-from tmdbhelper_sync_mdblist.sync.datatype import MDbListDataType, MDbListDataTypeEpisodesToShows, MDbListDataTypeSnapshot
-from tmdbhelper_sync_mdblist.sync.pagination import MDbListSyncCollection
+from duskmate_sync_mdblist.sync.dataconf import configure_episode_list, configure_episode_snapshot
+from duskmate_sync_mdblist.sync.datatype import MDbListDataType, MDbListDataTypeEpisodesToShows, MDbListDataTypeSnapshot
+from duskmate_sync_mdblist.sync.pagination import MDbListSyncCollection
 
 
 class MDbListWatchedCollection:
@@ -116,7 +116,7 @@ class SyncWatchedEpisodes(MDbListDataTypeEpisodesToShows, SyncWatched):
     sync_kwgs_mediatype = 'episode'
 
     def get_watched_counts(self):
-        from tmdbhelper_sync_mdblist.sync.datasync import (
+        from duskmate_sync_mdblist.sync.datasync import (
             MDbListSyncDataGetterShowWatchedCounts,
             MDbListSyncDataGetterSeasonWatchedCounts,
         )

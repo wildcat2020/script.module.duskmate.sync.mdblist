@@ -1,7 +1,7 @@
 from jurialmunkey.ftools import cached_property
 from tmdbhelper.lib.api.request import RequestAPI
-from tmdbhelper_sync_mdblist.settings import MDbListSettings
-from tmdbhelper_sync_mdblist.ratings_mapping import (
+from duskmate_sync_mdblist.settings import MDbListSettings
+from duskmate_sync_mdblist.ratings_mapping import (
     MDbListRatingMapping,
     MDbListSeasonRatingMapping,
     MDbListEpisodeRatingMapping,

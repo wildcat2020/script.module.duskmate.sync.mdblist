@@ -1,4 +1,4 @@
-from tmdbhelper_sync_mdblist.directories.item import MDbListDirItem
+from duskmate_sync_mdblist.directories.item import MDbListDirItem
 
 
 class BaseDirItemMDbListTopLists(MDbListDirItem):

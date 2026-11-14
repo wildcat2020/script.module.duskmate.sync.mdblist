@@ -1,6 +1,6 @@
-from tmdbhelper_sync_mdblist.api import MDbListContainerAPIs
+from duskmate_sync_mdblist.api import MDbListContainerAPIs
 from tmdbhelper.lib.items.directories.tmdb.lists_standard import ListStandard
-from tmdbhelper_sync_mdblist.directories.lists_local import ListMDbListLocalProperties
+from duskmate_sync_mdblist.directories.lists_local import ListMDbListLocalProperties
 from tmdbhelper.lib.items.directories.lists_local import UncachedListLocalData
 from tmdbhelper.lib.addon.plugin import get_setting, convert_type
 from jurialmunkey.ftools import cached_property
